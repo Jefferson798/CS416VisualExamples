@@ -6,3 +6,5 @@ plot(y, type="p")
 plot(y, type="l")
 plot(y, type="b")
 plot(y, type="h")
+
+dev.off()
