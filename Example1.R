@@ -1,3 +1,4 @@
+png("Figure1_Base_R_Plots.png", width = 900, height = 700)
 #Examples of 4 graphs
 par(mfrow=c(2, 2), cex=0.6, mar=c(4, 4, 1, 1))
 y <- rnorm(20)
