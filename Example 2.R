@@ -1,3 +1,4 @@
+png("Figure2_Base_R_Plots.png", width = 900, height = 700)
 # ggplot2 examples
 library(ggplot2)
 
@@ -15,6 +16,8 @@ qplot(mpg, data=mtcars, geom="density", fill=gear, alpha=I(.5),
       ylab="Density")
 # Scatterplot of mpg vs. hp for each combination of gears and cylinders
 # in each facet, transmittion type is represented by shape and color
-qplot(hp, mpg, data=mtcars, shape=am, color=am,
+print(qplot(hp, mpg, data=mtcars, shape=am, color=am,
       facets=gear~cyl, size=I(3),
-      xlab="Horsepower", ylab="Miles per Gallon")
+      xlab="Horsepower", ylab="Miles per Gallon"))
+# Save the plot as a PNG file
+dev.off()
